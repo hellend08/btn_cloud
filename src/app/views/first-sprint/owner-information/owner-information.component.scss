@@ -1,0 +1,129 @@
+.mat-progress-bar{
+    height: 10px;
+    border-radius: 5px;
+}
+
+::ng-deep .mat-progress-bar-buffer{
+    background-color: #ECECEC !important;
+}
+
+
+// *** BREAKPOINST ***
+@media (min-width: 360px) and (max-width: 639px) {
+    #owner{
+        display: flex;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #contenedor {
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    h1 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    div .form {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 0px;
+        margin-bottom: 0px;
+    }
+
+    .mobile{
+        width: 90%;
+        margin-inline: auto;
+        
+    }
+
+    #sub-contenedor{
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    #menu{
+      display: flex;
+      margin-right: 50px;
+      margin-left: 12px;
+      margin-top: 20px;
+    }
+
+    #logo{
+        background-color: #FFFFFF;
+        margin-bottom: 12px;
+        padding-right: 40px;
+    }
+
+    .check{
+        margin-bottom: 60px;
+    }
+
+    #product {
+        display: none;
+    }
+    #btn-destok{
+        display: none !important;
+    }
+
+    #btn-mobile{
+        display: flex;
+        margin-inline: auto;
+        margin-top: 28px;
+    }
+  }
+
+@media (min-width: 640px) and (max-width: 900px) {
+    #contenedor {
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #sub-contenedor{
+        margin-left: 12px;
+    }
+
+  #owner { 
+    width: 100%;
+    }
+
+  #product {
+    display: none; 
+    //   width: 100%;
+  }
+
+  #btn-destok{
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1124px){
+    #contenedor {
+        padding-top: 0px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+//     #sub-contenedor{
+//         margin-left: 12px;
+//     }
+
+//   #owner { 
+//     width: 100%;
+//     }
+
+//   #product {
+//     display: none; 
+//     //   width: 100%;
+//   }
+
+//   #btn-destok{
+//     display: flex;
+//     margin-bottom: 30px;
+//   }
+}

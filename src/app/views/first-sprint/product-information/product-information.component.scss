@@ -1,0 +1,64 @@
+.mat-progress-bar{
+    height: 10px;
+    border-radius: 5px;
+}
+
+::ng-deep .mat-progress-bar-buffer{
+    background-color: #ECECEC !important;
+}
+
+
+// *** BREAKPOINST ***
+@media (min-width: 360px) and (max-width: 639px) {
+    #contenedor {
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #sub-contenedor{
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    #menu{
+      display: flex;
+      margin-right: 50px;
+      margin-left: 12px;
+      margin-top: 20px;
+    }
+
+    #logo{
+        background-color: #FFFFFF;
+        margin-bottom: 12px;
+        padding-right: 40px;
+    }
+
+    #owner { 
+        display: none; 
+    }
+
+    #progress-bar{
+        display: flex;
+    }
+  
+    #product {
+        width: 100%;
+    }
+
+    #btn-mobile{
+        display: flex;
+        margin-inline: auto;
+        margin-top: 28px;
+    }
+  }
+
+@media (min-width: 640px) and (max-width: 900px) {
+  #owner { 
+      display: none; 
+    }
+
+  #product {
+      width: 100%;
+  }
+}
