@@ -80,8 +80,9 @@ th, td{
       }
 
       .bg-white{
-          width: 100%;
+          width: 95%;
           margin-bottom: 10px;
+          margin-inline: 10px;
       }
 
       #contenedor{
@@ -98,6 +99,7 @@ th, td{
       }
 
       .hidden th {
+        @apply text-gray-300 font-light;
         padding-inline: 0px;
         padding-left: 5px;
         padding-right: 72px;
@@ -117,6 +119,10 @@ th, td{
     .table-panel th {
         padding-inline: 0px;
         padding-left: 5px;
+    }
+
+    .table-panel td{
+        color: #000000;
     }
 
       #section-mobile{

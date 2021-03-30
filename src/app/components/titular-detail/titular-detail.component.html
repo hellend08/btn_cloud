@@ -15,12 +15,12 @@
             <div class="flex flex-row form w-9/12 mx-auto mobiles">
                 <mat-form-field appearance="outline" class="w-6/12 mr-5 mobile">
                     <mat-label>Nombres</mat-label>
-                    <input formControlName="name" matInput placeholder="Ingresa tus nombres">
+                    <input formControlName="name" matInput maxlength="30" placeholder="Ingresa tus nombres">
                     <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                 </mat-form-field>
                 <mat-form-field appearance="outline" class="w-6/12 mobile">
                     <mat-label>Appelidos</mat-label>
-                    <input formControlName="surname" matInput placeholder="Ingresa tus apellidos">
+                    <input formControlName="surname" matInput maxlength="30" placeholder="Ingresa tus apellidos">
                     <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                 </mat-form-field>
             </div>
