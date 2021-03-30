@@ -6,7 +6,7 @@
         <img src="./../../../../assets/images/logo.png" alt="logo" width="215px" height="66px">
     </div>
     <div class="bg-white w-10/12 rounded-lg mx-auto mb-12 pb-20 mb-20">
-        <div class="mx-20">
+        <div class="mx-20" id="contenedor">
             <div class="mx-6 pb-3 pt-8 flex align-items-center">
                 <mat-progress-bar color="primary" mode="determinate" value="100"></mat-progress-bar>
             </div>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="mx-auto pb-12">
                     <div class="bg-gray-50 rounded-lg my-5 py-4">
-                        <table class="">
+                        <table>
                             <tr class="text-gray-300 font-light">
                                 <th>Consecutivo</th>
                                 <th>Numero de Factura</th>
@@ -36,6 +36,30 @@
                             </tr>
                         </table>
                     </div>
+                    <div class="hidden mt-2 pt-2 ">
+                        <table class="mx-auto text-left">
+                            <tr>
+                                <th>Consecutivo</th>
+                                <td>85955656</td>
+                            </tr>
+                            <tr>
+                                <th>Numero de Factura</th>
+                                <td>12253363323 </td>
+                            </tr>
+                            <tr>
+                                <th>Número Aprobación</th>
+                                <td>85462655</td>
+                            </tr>
+                            <tr>
+                                <th>Fecha Trx</th>
+                                <td>12/15/18</td>
+                            </tr>
+                            <tr>
+                                <th>Hora Trx</th>
+                                <td>15:03</td>
+                            </tr>
+                        </table>
+                    </div>
                     <div class="mb-5 mt-10 w-11/12 mx-auto">
                         <mat-accordion>
                             <mat-expansion-panel>
@@ -48,7 +72,7 @@
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
                                 <div class="text-left w-full">
-                                    <table class="mx-auto">
+                                    <table class="mx-auto table-panel">
                                         <tr>
                                             <th>Nombre</th>
                                             <td>Alfredo</td>
@@ -82,7 +106,7 @@
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
                                 <div class="text-left w-full">
-                                    <table class="mx-auto">
+                                    <table class="mx-auto table-panel">
                                         <tr>
                                             <th>Tipo de tarjeta</th>
                                             <td>Visa</td>
@@ -124,7 +148,7 @@
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
                                 <div class="text-left w-full">
-                                    <table class="mx-auto">
+                                    <table class="mx-auto table-panel">
                                         <tr>
                                             <th>Factura</th>
                                             <td>Visa</td>
@@ -166,7 +190,7 @@
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
                                 <div class="text-left text-gray-300 w-full">
-                                    <table class="mx-auto">
+                                    <table class="mx-auto table-panel">
                                         <tr class="boldy">
                                             <th>Detalle comercio</th>
                                             <td>Implus</td>
@@ -185,19 +209,19 @@
                         </mat-accordion>
                     </div>
                 </div>
-                <div class="flex flex-row w-full mb-8">
-                    <mat-form-field appearance="outline" class="w-5/12 mx-11 text-sm">
+                <div class="flex flex-row w-full mb-8" id="section-mobile">
+                    <mat-form-field appearance="outline" class="w-5/12 mx-11 text-sm" id="btn-send">
                         <input matInput placeholder="Escriba aquí su correo electrónico">
                         <button class="send" matSuffix mat-button>ENVIAR<mat-icon class="inline">send</mat-icon>
                         </button>
                     </mat-form-field>
-                    <button class="bg-primary-600 text-white text-center w-5/12 h-10 btn-btn" mat-raised-button>
+                    <button class="bg-primary-600 text-white text-center w-5/12 h-10 btn-btn" id="btn-cloud" mat-raised-button>
                         Descargar comprobante de pago <mat-icon class="ml-3">cloud_download</mat-icon>
                     </button>
                 </div>
                 <div class="mb-12 w-full">
                     <p class="text-center">
-                        <button class="w-6/12 btn-btn gradient mx-auto text-white h-10"
+                        <button id="btn-end" class="w-6/12 btn-btn gradient mx-auto text-white h-10"
                             mat-raised-button>Finalizar</button>
                     </p>
                 </div>

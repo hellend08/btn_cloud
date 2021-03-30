@@ -61,6 +61,77 @@ th, td{
     outline: none !important;
 }
 
+// BREAKPOINTS
 @media (min-width: 360px) and (max-width: 640px){
+    #logo{
+        background-color: #FFFFFF;
+        margin-bottom: 12px;
+        padding-right: 40px;
+    }
 
+    #menu{
+        display: flex;
+        margin-right: 50px;
+        margin-left: 12px;
+        margin-top: 20px;
+      }
+
+      .bg-white{
+          width: 100%;
+          margin-bottom: 10px;
+      }
+
+      #contenedor{
+          margin-inline: 0px;
+      }
+
+      .bg-gray-50{
+          display: none;
+      }
+
+      .hidden{
+          display: block;
+
+      }
+
+      .hidden th {
+        padding-inline: 0px;
+        padding-left: 5px;
+        padding-right: 72px;
+        padding-bottom: 3px;
+      }
+
+      .hidden td {
+          padding-inline: 0px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+    }
+
+    .mat-expansion-panel p{
+        margin-left: 0px;
+    }
+
+    .table-panel th {
+        padding-inline: 0px;
+        padding-left: 5px;
+    }
+
+      #section-mobile{
+          display: flex;
+          flex-direction: column;
+      }
+
+      #btn-send{
+          width: 100%;
+          margin-inline: 0px;
+      }
+
+      #btn-cloud{
+          width: 100%;
+          margin-bottom: 3rem;
+      }
+
+      #btn-end{
+          width: 90%;
+      }
 }
