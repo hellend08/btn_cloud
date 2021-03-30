@@ -1,5 +1,11 @@
-<div class="w-full flex ">
-    <div class="bg-white w-10/12 rounded-lg mx-auto my-12 pb-44 mb-20">
+<div class="w-full flex flex-col">
+    <div class="flex justify-center" id="logo">
+        <span class="hidden" id="menu">
+            <mat-icon>menu</mat-icon>
+        </span>
+        <img src="./../../../../assets/images/logo.png" alt="logo" width="215px" height="66px">
+    </div>
+    <div class="bg-white w-10/12 rounded-lg mx-auto mb-12 pb-20 mb-20">
         <div class="mx-20">
             <div class="mx-6 pb-3 pt-8 flex align-items-center">
                 <mat-progress-bar color="primary" mode="determinate" value="100"></mat-progress-bar>
@@ -38,10 +44,29 @@
                                         <!-- Self aware panel -->
                                     </mat-panel-title>
                                     <mat-panel-description>
-                                        Información personal
+                                        <p class="ml-32">Información personal</p>
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
-                                <p>I'm visible because I am open</p>
+                                <div class="text-left w-full">
+                                    <table class="mx-auto">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <td>Alfredo</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Apellido</th>
+                                            <td>Gutierres Lozano</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tipo de documento</th>
+                                            <td>CC</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Documento</th>
+                                            <td>985265656363262 </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </mat-expansion-panel>
                         </mat-accordion>
                     </div>
@@ -53,10 +78,37 @@
                                         <!-- Self aware panel -->
                                     </mat-panel-title>
                                     <mat-panel-description>
-                                        Información medio de pago/Tarjeta
+                                        <p class="ml-32">Información medio de pago/Tarjeta</p>
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
-                                <p>I'm visible because I am open</p>
+                                <div class="text-left w-full">
+                                    <table class="mx-auto">
+                                        <tr>
+                                            <th>Tipo de tarjeta</th>
+                                            <td>Visa</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Franquicia</th>
+                                            <td>Visa Land</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Bin</th>
+                                            <td>65663</td>
+                                        </tr>
+                                        <tr>
+                                            <th>4 Ultimos digitos</th>
+                                            <td>**********1123 </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Cuotas</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Bolsillo</th>
+                                            <td>8966</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </mat-expansion-panel>
                         </mat-accordion>
                     </div>
@@ -68,10 +120,37 @@
                                         <!-- Self aware panel -->
                                     </mat-panel-title>
                                     <mat-panel-description>
-                                        Información comercio
+                                        <p class="ml-32">Información comercio</p>
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
-                                <p>I'm visible because I am open</p>
+                                <div class="text-left w-full">
+                                    <table class="mx-auto">
+                                        <tr>
+                                            <th>Factura</th>
+                                            <td>Visa</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Monto neto</th>
+                                            <td>$ 100.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Impuestos</th>
+                                            <td>$ 4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Montos adicionales</th>
+                                            <td>$ 16.36 </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Descuentos</th>
+                                            <td>-$ 30.020 </td>
+                                        </tr>
+                                        <tr class="boldy">
+                                            <th>Monto total</th>
+                                            <td>$ 63.80 </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </mat-expansion-panel>
                         </mat-accordion>
                     </div>
@@ -83,27 +162,44 @@
                                         <!-- Self aware panel -->
                                     </mat-panel-title>
                                     <mat-panel-description>
-                                        Información personal
+                                        <p class="ml-32">Información personal</p>
                                     </mat-panel-description>
                                 </mat-expansion-panel-header>
-                                <p>I'm visible because I am open</p>
+                                <div class="text-left text-gray-300 w-full">
+                                    <table class="mx-auto">
+                                        <tr class="boldy">
+                                            <th>Detalle comercio</th>
+                                            <td>Implus</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CU</th>
+                                            <td>523566</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Terminal</th>
+                                            <td>ACCDB2</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </mat-expansion-panel>
                         </mat-accordion>
                     </div>
                 </div>
                 <div class="flex flex-row w-full mb-8">
-                        <mat-form-field appearance="outline" class="w-5/12 mx-11 text-sm">
-                            <input matInput placeholder="Escriba aquí su correo electrónico">
-                            <button class="send" matSuffix mat-button>ENVIAR<mat-icon class="inline">send</mat-icon></button>
-                        </mat-form-field>
-                        <button class="bg-primary-600 text-white text-center w-5/12 h-10 btn-btn" mat-raised-button>
-                            Descargar comprobante de pago <mat-icon class="ml-3">cloud_download</mat-icon>
+                    <mat-form-field appearance="outline" class="w-5/12 mx-11 text-sm">
+                        <input matInput placeholder="Escriba aquí su correo electrónico">
+                        <button class="send" matSuffix mat-button>ENVIAR<mat-icon class="inline">send</mat-icon>
                         </button>
+                    </mat-form-field>
+                    <button class="bg-primary-600 text-white text-center w-5/12 h-10 btn-btn" mat-raised-button>
+                        Descargar comprobante de pago <mat-icon class="ml-3">cloud_download</mat-icon>
+                    </button>
                 </div>
                 <div class="mb-12 w-full">
                     <p class="text-center">
-                    <button class="w-6/12 btn-btn gradient mx-auto text-white h-10" mat-raised-button>Finalizar</button>
-                </p>
+                        <button class="w-6/12 btn-btn gradient mx-auto text-white h-10"
+                            mat-raised-button>Finalizar</button>
+                    </p>
                 </div>
             </div>
         </div>
