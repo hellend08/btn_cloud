@@ -7,8 +7,6 @@
     background-color: #ECECEC !important;
 }
 
-
-// *** BREAKPOINST ***
 @media (min-width: 360px) and (max-width: 639px) {
     #owner{
         display: flex;
@@ -23,7 +21,7 @@
     }
 
     .progresss-bar{
-        display: flex;
+        display: none;
     }
 
     h1 {
@@ -78,7 +76,7 @@
         margin-inline: auto;
         margin-top: 28px;
     }
-  }
+}
 
 @media (min-width: 640px) and (max-width: 900px) {
     #contenedor {
@@ -89,8 +87,6 @@
 
     #sub-contenedor{
         margin-left: 12px;
-        margin-right: 12px;
-
     }
 
   #owner { 
@@ -99,7 +95,6 @@
 
   #product {
     display: none; 
-    //   width: 100%;
   }
 
   #btn-destok{
@@ -107,3 +102,12 @@
     margin-bottom: 30px;
   }
 }
+
+// @media (min-width: 901px) and (max-width: 1124px){
+//     #contenedor {
+//         padding-top: 0px;
+//         margin-right: 20px;
+//         margin-left: 20px;
+//     }
+
+// }

@@ -22,6 +22,7 @@ import { OwnerInformationComponent } from './views/first-sprint/owner-informatio
 import { PaymentPseComponent } from './views/first-sprint/payment-method/payment-pse/payment-pse.component';
 import { CardPaymentComponent } from './views/first-sprint/payment-method/card-payment/card-payment.component';
 import { ApprovedTransactionComponent } from './views/first-sprint/approved-transaction/approved-transaction.component';
+import { TitularDetailComponent } from './components/titular-detail/titular-detail.component';
 
 
 
@@ -35,6 +36,7 @@ import { ApprovedTransactionComponent } from './views/first-sprint/approved-tran
     PaymentPseComponent,
     CardPaymentComponent,
     ApprovedTransactionComponent,
+    TitularDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, Validators, FormBuilder} from '@angular/forms'
 
+
 @Component({
-  selector: 'app-product-information',
-  templateUrl: './product-information.component.html',
-  styleUrls: ['./product-information.component.scss']
+  selector: 'app-titular-detail',
+  templateUrl: './titular-detail.component.html',
+  styleUrls: ['./titular-detail.component.scss']
 })
-export class ProductInformationComponent implements OnInit {
+export class TitularDetailComponent implements OnInit {
 
   form: FormGroup;
+
 
   constructor(private fb: FormBuilder) { }
 
@@ -19,5 +21,5 @@ export class ProductInformationComponent implements OnInit {
       doc: [ '', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
     })
   }
-  
+
 }
