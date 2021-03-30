@@ -16,6 +16,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   @apply bg-primary;
 }
 
+.btn-btn{
+  border-radius: 12px !important;
+}
+
 .gradient {
   background: linear-gradient(to right, #DB301C, #41125D, #241D75, #053CA3, #247AC0, #4F964A);
 }

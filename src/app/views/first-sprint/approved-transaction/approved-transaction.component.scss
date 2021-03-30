@@ -1,0 +1,57 @@
+.mat-progress-bar{
+    height: 10px;
+    border-radius: 5px;
+}
+
+::ng-deep .mat-progress-bar-buffer{
+    background-color: #ECECEC !important;
+}
+
+th, td{
+    padding-inline: 43px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.send{
+    position: absolute;
+    bottom: -12px;
+    right: -5px;
+    height: 40.5px;
+    background-color: #FE502F;
+    color: #FFFFFF;
+    border-radius: 12px;
+}
+
+::ng-deep .mat-form-field-appearance-outline {
+    .mat-form-field-wrapper{
+    margin-top: 0px !important;
+    }
+    .mat-form-field-infix{
+        padding: .82em 0em .82em 0 !important;
+    }
+    .mat-form-field-flex{
+        padding: 0em 0em 0em .75em !important;
+        background-color: #EBEBEB;
+        border-radius: 8px;
+    }
+    .mat-form-field-outline-thick {
+        color: #D7D7D7 !important;
+    }
+    .mat-form-field-outline{
+        top: .0em !important;
+    }
+}
+
+::ng-deep .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{
+    display: inline !important;
+    margin-left: 5px;
+}
+
+::ng-deep .mat-form-field-infix {
+    border-top: 0em !important
+}
+
+.mat-focused {
+    outline: none !important;
+}

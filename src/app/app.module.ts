@@ -14,6 +14,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 import { ProductInformationComponent } from './views/first-sprint/product-information/product-information.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
@@ -51,7 +53,8 @@ import { TitularDetailComponent } from './components/titular-detail/titular-deta
     MatButtonModule,
     MatProgressBarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

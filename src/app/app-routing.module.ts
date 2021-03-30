@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ApprovedTransactionComponent } from './views/first-sprint/approved-transaction/approved-transaction.component';
 import { OwnerInformationComponent } from './views/first-sprint/owner-information/owner-information.component';
 import { CardPaymentComponent } from './views/first-sprint/payment-method/card-payment/card-payment.component';

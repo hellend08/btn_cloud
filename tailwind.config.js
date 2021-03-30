@@ -31,12 +31,19 @@ module.exports = {
         'primary-100': '#D7DEFB',
         'primary-200': '#AEBFFA',
         'primary-400': '#879EFB',
-        'primary-600': '#607EFA',
+        'primary-600': '#095BA5',
         'primary-800': '#395DF9',
         gray: {
+            '50': '#F6F5F5',
             '100': '#FAFAFA',
             '200': '#3F3E3E',
+            '300': '#7B7B7B',
+            '600': '#555555',
             '800': '#847B81'
+        },
+        green: {
+          '300': '#D7FFDF',
+          '400': '#13F300'
         }
     },
     spacing: {

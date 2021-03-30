@@ -39,8 +39,15 @@
         margin-bottom: 0px;
     }
 
+    .mobiles{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-inline: auto;
+    }
+
     .mobile{
-        width: 90%;
+        width: 80%;
         margin-inline: auto;
         
     }
@@ -81,7 +88,7 @@
     }
 }
 
-@media (min-width: 640px) and (max-width: 900px) {
+@media (min-width: 640px) and (max-width: 990px) {
     #contenedor {
         padding-top: 0px;
         margin-right: 0px;
