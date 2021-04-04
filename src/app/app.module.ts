@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 import { ProductInformationComponent } from './views/first-sprint/product-information/product-information.component';
@@ -54,7 +55,8 @@ import { TitularDetailComponent } from './components/titular-detail/titular-deta
     MatProgressBarModule,
     FormsModule,
     ReactiveFormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

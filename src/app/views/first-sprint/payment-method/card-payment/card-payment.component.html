@@ -14,56 +14,86 @@
                 <div class="mx-auto">
                     <h1 class="text-3xl font-medium text-primary text-center my-5">Medio de Pago
                     </h1>
-                    <button mat-raised-button>
-                        <mat-icon>credit_card</mat-icon>Pago con tarjeta
-                    </button>
-                    <button mat-raised-button>Pago con PSE</button>
+                    <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style"
+                        class="text-sm">
+                        <mat-button-toggle value="bold">
+                            <mat-icon class="mr-3">credit_card</mat-icon>Pago con tarjeta
+                        </mat-button-toggle>
+                        <mat-button-toggle value="italic">Pago con PSE<img class="inline ml-3"
+                                src="../../../../../assets/images/pse.png" alt="pse"></mat-button-toggle>
+                    </mat-button-toggle-group>
                 </div>
-                <div class="mx-auto w-full" [formGroup]="form">
-                    <div class="">
-                        <p class="text-xs">Número de tarjeta</p>
-                        <mat-form-field appearance="outline" class="w-6/12">
+                <!-- tarjeta -->
+                <section id="card" class="card active w-1/2 my-5 mx-auto relative">
+                    <div class="front text-white">
+                        <div>
+                            <div class="logo flex flex-wrap flex justify-between">
+                                <p>################</p>
+                                <img src="../../../../../assets/images/visa.png" alt="visa" width="50px" height="20px">
+                            </div>
+                            <img src="../../../../../assets/images/chip-tarjeta.png" alt="chip-tarjeta" width="30px"
+                                height="30px">
+                        </div>
+                        <div class="flex flex-row flex justify-between mt-5">
+                            <p>Alfredo Gutierrez</p>
+                            <p>MM/YY</p>
+                        </div>
+                    </div>
+                    <div class="rear text-white">
+                        <div class="bg-black w-full h-7 absolute top-5 left-0"></div>
+                        <div class="bg-red-100 text-right my-3">
+                            <p>CVV</p>
+                        </div>
+                        <img class="ml-auto mt-5" src="../../../../../assets/images/visa.png" alt="visa" width="50px" height="20px">
+                    </div>
+                </section>
+                <div class="mx-auto w-full my-5" [formGroup]="form">
+                    <div class="mx-auto w-8/12">
+                        <p class="text-xs font-medium">Número de tarjeta</p>
+                        <mat-form-field appearance="outline" class="w-full pr-4">
                             <!-- <mat-label>Nombres</mat-label> -->
-                            <input formControlName="card" matInput placeholder="Ingresa tus nombres">
+                            <input formControlName="card" matInput maxlength="12" placeholder="000.000.000.000">
                             <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="flex flex-row mb-8">
-                     
-                        <p class="">
-                            <span class="text-xs">CVV</span>
-                            <mat-form-field appearance="outline" >
-                                <!-- <mat-label>Appelidos</mat-label> -->
-                                <input formControlName="cvv" matInput placeholder="Ingresa tus apellidos">
-                                <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
-                            </mat-form-field>
-                        </p>
-                        <p class="">
-                            <span class="text-xs">Fecha de vencimiento</span>
-                            <mat-form-field appearance="outline" >
-                                <!-- <mat-label>Appelidos</mat-label> -->
-                                <input formControlName="date" matInput placeholder="Ingresa tus apellidos">
-                                <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
-                            </mat-form-field>
-                        </p>
-                        <p class="">
-                            <span class="text-xs">Cuotas</span>
-                            <mat-form-field appearance="outline" >
-                                <!-- <mat-label>Número de documento</mat-label> -->
-                                <input formControlName="share" matInput maxlength="10"
-                                    placeholder="Ingresa tu número de documento">
-                                <mat-error align="left" *ngIf="form.dirty">Ingrese solo números</mat-error>
-                            </mat-form-field>
-                        </p>
+                    <div>
+                        <div class="flex flex-row mx-auto w-8/12">
+                            <div class="w-20">
+                                <span class="block text-xs font-medium">CVV</span>
+                                <mat-form-field appearance="outline" class="w-full">
+                                    <!-- <mat-label>Appelidos</mat-label> -->
+                                    <input formControlName="cvv" matInput maxlength="3" placeholder="000">
+                                    <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="w-40 ml-5">
+                                <span class="block text-xs font-medium">Fecha de vencimiento</span>
+                                <mat-form-field appearance="outline" class="w-full">
+                                    <!-- <mat-label>Appelidos</mat-label> -->
+                                    <input formControlName="date" matInput maxlength="5" placeholder="15/02">
+                                    <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="w-20 ml-5">
+                                <span class="block text-xs font-medium">Cuotas</span>
+                                <mat-form-field appearance="outline" class="w-full">
+                                    <!-- <mat-label>Número de documento</mat-label> -->
+                                    <input formControlName="share" matInput maxlength="2" placeholder="2">
+                                    <mat-error align="left" *ngIf="form.dirty">Ingrese solo números</mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="mx-auto mt-16">
+                <div class="mx-auto mt-5">
                     <div class="flex flex-row">
                         <p class="mr-5">
-                            <button routerLink="/payment" class="basic bg-primary mr-5" mat-raised-button>Cancelar</button>
+                            <button routerLink="/payment" class="basic bg-primary mr-5"
+                                mat-raised-button>Cancelar</button>
                         </p>
                         <p>
-                            <button routerLink="/approved-transaction" class="basic gradient" mat-raised-button>Continuar</button>
+                            <button routerLink="/approved-transaction" class="basic gradient"
+                                mat-raised-button>Continuar</button>
                         </p>
                     </div>
                 </div>
