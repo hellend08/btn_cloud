@@ -1,4 +1,4 @@
-.mat-progress-bar{
+  .mat-progress-bar{
     height: 10px;
     border-radius: 5px;
   }
@@ -20,15 +20,15 @@
   }
 
   .card{
-    transition: .3s ease all;
-    transform: rotateY(0deg);
+    transition: all 0.5s cubic-bezier(0.71, 0.03, 0.56, 0.85);
+    transform: perspective(1000px) rotateY(0) rotateX(0deg) rotateZ(0deg);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     cursor: pointer;
-    // z-index: 2;
+    z-index: 2;
 
     .front, .rear{
-      background: url(../../../../../assets/images/bg-tarjeta-02.jpg);
+      background: url(../../../../../assets/images/bg-tarjeta-01.jpg);
       background-size: cover;
     }
 
@@ -36,15 +36,17 @@
       width: 100%;
       position: absolute;
       top: 0;
-      transform: rotateY(180deg);
+      transform: perspective(1000px) rotateY(180deg) rotateX(0deg)
+      rotateZ(0deg);
+      transition: all 0.8s cubic-bezier(0.71, 0.03, 0.56, 0.85);
       backface-visibility: hidden;
     }
 
-   
-  }
+    &.active{
+      transform: perspective(1000px) rotateY(180deg) rotateX(0deg)
+      rotateZ(0deg);
+    }
 
-  .card.active{
-    transform: rotateY(180deg);
   }
 
   .card > div{
@@ -54,6 +56,123 @@
     box-shadow: 0 10px 5px rgba(90,116,148,0.3);
   }
 
-  // .mat-ripple-element{
-  //   transform: disabled !important;
-  // }
+  @media (min-width: 360px) and (max-width: 640px) {
+    #product {
+        display: none;
+    }
+
+    #contenedor {
+      padding-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    #payment{
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    }
+
+    .progresss-bar{
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 90%;
+    }
+
+    #menu{
+      display: flex;
+      margin-right: 50px;
+      margin-left: 12px;
+      margin-top: 20px;
+    }
+
+    #logo{
+        background-color: #FFFFFF;
+        margin-bottom: 12px;
+        padding-right: 40px;
+    }
+
+    #sub-contenedor{
+      margin-right: 12px;
+      margin-left: 12px;
+    }
+
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .mat-button-toggle-group{
+      width: 100%;
+    }
+
+    #card{
+
+      max-width: 270px;
+    }
+
+    div .form {
+      margin-inline: auto;
+      margin-bottom: 0px;
+      width: 100%;
+    }
+
+    .input{
+      width: 50px;
+    }
+
+    .input-long{
+      width: 125px;
+    }
+
+    #btn-destok{
+      display: none !important;
+    }
+
+    #btn-mobile{
+        display: flex;
+        margin-inline: auto;
+        margin-top: 28px;
+        margin-bottom: 30px;
+    }
+
+  }
+
+  @media (min-width: 641px) and (max-width: 900px){
+    #product {
+      display: none;
+    }
+
+    #btn-destok{
+      margin-bottom: 25px;
+    }
+
+    #payment{
+      display: block;
+      width: 100%;
+      margin-right: 0px;
+      }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px){
+      #contenedor {
+        margin-inline: 30px;
+      }
+  }
+
+  @media (min-width: 1700px) and (max-width: 2000px){
+      #contenedor {
+        margin-inline: 180px;
+      }
+
+      #card{
+        max-width: 300px;
+      }
+
+      div .form {
+        margin-inline: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+      }
+  }
+

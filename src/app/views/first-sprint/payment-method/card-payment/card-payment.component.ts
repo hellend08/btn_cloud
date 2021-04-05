@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {FormGroup, Validators, FormBuilder} from '@angular/forms'
 
 
@@ -10,6 +10,16 @@ import {FormGroup, Validators, FormBuilder} from '@angular/forms'
 export class CardPaymentComponent implements OnInit {
 
   form: FormGroup;
+
+  @Input() active: boolean = false;
+
+  rearEntry(): void {
+    this.active = true;
+  }
+
+  frontEntry(): void {
+    this.active = false;
+  }
 
   constructor(private fb: FormBuilder) { }
 
