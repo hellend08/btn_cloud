@@ -28,7 +28,7 @@
                     <div class="front text-white">
                         <div>
                             <div class="logo flex flex-wrap flex justify-between mb-3 text-sm">
-                                <p>################</p>
+                                <p>#############0845</p>
                                 <img src="../../../../../assets/images/visa.png" alt="visa" width="50px" height="20px">
                             </div>
                             <img src="../../../../../assets/images/chip-tarjeta.png" alt="chip-tarjeta" width="30px"
@@ -36,7 +36,7 @@
                         </div>
                         <div class="flex flex-row flex justify-between mt-5 text-xs">
                             <p>Alfredo Gutierrez</p>
-                            <p>MM/YY</p>
+                            <p>15/02</p>
                         </div>
                     </div>
                     <div class="rear text-black">
@@ -52,7 +52,7 @@
                         <p class="text-xs font-medium">Número de tarjeta</p>
                         <mat-form-field appearance="outline" class="w-full" (click)="frontEntry()">
                             <!-- <mat-label>Nombres</mat-label> -->
-                            <input formControlName="card" matInput maxlength="12" placeholder="000.000.000.000">
+                            <input formControlName="card" matInput maxlength="15" placeholder="000.000.000.000" mask="000.000.000.000">
                             <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                         </mat-form-field>
                     </div>
@@ -62,7 +62,7 @@
                                 <span class="block text-xs font-medium">CVV</span>
                                 <mat-form-field appearance="outline" class="w-full" (click)="rearEntry()">
                                     <!-- <mat-label>Appelidos</mat-label> -->
-                                    <input formControlName="cvv" matInput maxlength="3" placeholder="000">
+                                    <input type="password" formControlName="cvv" matInput maxlength="3" placeholder="000">
                                     <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                                 </mat-form-field>
                             </div>
@@ -70,7 +70,7 @@
                                 <span class="block text-xs font-medium">Fecha de vencimiento</span>
                                 <mat-form-field appearance="outline" class="w-full" (click)="frontEntry()">
                                     <!-- <mat-label>Appelidos</mat-label> -->
-                                    <input formControlName="date" matInput maxlength="5" placeholder="15/02">
+                                    <input formControlName="date" matInput maxlength="5" placeholder="15/02" mask="00/00">
                                     <mat-error align="left" *ngIf="form.dirty">Ingrese sus datos completos</mat-error>
                                 </mat-form-field>
                             </div>
@@ -89,7 +89,7 @@
                     <div class="flex flex-row">
                         <p class="mr-5">
                             <button routerLink="/payment" class="basic bg-primary mr-5"
-                                mat-raised-button>Cancelar</button>
+                                mat-raised-button>Volver</button>
                         </p>
                         <p>
                             <button routerLink="/approved-transaction" class="basic gradient"

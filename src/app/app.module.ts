@@ -17,6 +17,7 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
+import { NgxMaskModule, IConfig } from 'ngx-mask'
 
 import { ProductInformationComponent } from './views/first-sprint/product-information/product-information.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
@@ -56,7 +57,8 @@ import { TitularDetailComponent } from './components/titular-detail/titular-deta
     FormsModule,
     ReactiveFormsModule,
     MatExpansionModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
